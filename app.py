@@ -4,7 +4,6 @@ from model import LangCheckerModule
 app = Flask(__name__)
 lang_checker_module = LangCheckerModule()
 
-# routes
 @app.route('/')
 def index():
     return render_template('index.html')
