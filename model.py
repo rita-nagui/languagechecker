@@ -22,9 +22,3 @@ class LangCheckerModule:
             incorrect_word = text[start_offset:end_offset]
             found_mistakes.append(incorrect_word)
         return found_mistakes
-
-if __name__ == "__main__":
-    obj = LangCheckerModule()
-    message = "Helo world. Plese give me banan. mashine"
-    print(obj.correct_spelling(message))
-    print(obj.correct_grammar(message))
